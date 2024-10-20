@@ -29,6 +29,12 @@ public class Product implements Serializable {
         this.price = price;
     }
 
+    public Product(long l, String s, double v) {
+        this.id = l;
+        this.name = s;
+        this.price = v;
+    }
+
     // Getters and Setters
     @JsonProperty("product_id")
     public Long getId() {
